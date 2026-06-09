@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索-精选高清影视</title>
+  <meta name="description" content="搜索电影、电视剧、地区、年份、类型和标签，快速找到想看的高清影视内容。">
+  <meta name="keywords" content="精选在线精品亚洲一区二区免费高清影视, 免费追剧热门电影电视剧, 在线免费播放影视全集, 高清无广告影视网站, 最新热门影视资源, 流畅不卡顿观影平台, 在线观看全网影视, 影片搜索, 在线搜片">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="site-logo" href="./index.html" aria-label="精选高清影视">
+      <span class="logo-mark">影</span>
+      <span class="logo-text">精选高清影视</span>
+    </a>
+    <nav class="primary-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">热播榜</a>
+      <a class="nav-link" href="./years.html">年份</a>
+      <a class="nav-link" href="./sitemap.html">片库索引</a>
+    </nav>
+    <form class="nav-search js-search-form" action="./search.html" method="get">
+      <input class="search-input" type="search" name="q" placeholder="搜索片名、地区、标签" aria-label="搜索影片">
+      <button class="search-button" type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="打开菜单" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./ranking.html">热播榜</a>
+    <a href="./years.html">年份</a>
+    <a href="./sitemap.html">片库索引</a>
+    <form class="mobile-search js-search-form" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="输入关键词">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main class="page-main">
+  <section class="page-hero slim-hero">
+    <p class="section-kicker">Search</p>
+    <h1>影片搜索</h1>
+    <p>输入片名、年份、地区、类型或标签，快速进入对应详情页观看。</p>
+    <form class="big-search search-page-form js-search-form" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="输入关键词">
+      <button type="submit">搜索影片</button>
+    </form>
+  </section>
+  <section class="search-result-panel">
+    <h2 data-search-title>相关影片</h2>
+    <div class="movie-grid catalog-grid" data-search-results></div>
+    <p class="empty-state" data-search-empty>没有找到相关影片</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-shell">
+    <a class="footer-logo" href="./index.html">精选高清影视</a>
+    <div class="footer-links">
+      <a href="./categories.html">分类频道</a>
+      <a href="./ranking.html">热播榜</a>
+      <a href="./years.html">年份片库</a>
+      <a href="./sitemap.html">片库索引</a>
+    </div>
+    <p>© 2026 精选高清影视 · 高清流畅观影</p>
+  </div>
+</footer>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/main.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
